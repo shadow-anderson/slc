@@ -1,0 +1,118 @@
+{
+    "members": [
+        {
+            "id": "SLC001",
+            "name": "Priya Mehta",
+            "role": "President",
+            "department": "English Literature",
+            "batch": "2023-2027",
+            "photo": "images/avatars/member1.svg",
+            "bio": "Specializing in postcolonial literature with a focus on diasporic narratives. Currently exploring the intersection of magical realism and contemporary South Asian storytelling, while leading the club's initiatives in promoting diverse literary voices.",
+            "specialization": [
+                "Postcolonial Theory",
+                "Narrative Techniques",
+                "Literary Criticism"
+            ],
+            "email": "priya.mehta@uni.edu",
+            "achievements": [
+                "Published 'Voices from the Margin' in University Literary Review",
+                "Presented at Regional Literary Theory Conference 2023",
+                "Curated 'Emerging Voices' Poetry Anthology"
+            ],
+            "favoriteQuote": {
+                "text": "In our village, folks say God crumbles up the old moon into stars.",
+                "author": "Alexander Solzhenitsyn"
+            }
+        },
+        {
+            "id": "SLC002",
+            "name": "Marcus Chen",
+            "role": "Poetry Editor",
+            "department": "Creative Writing",
+            "batch": "2022-2026",
+            "photo": "images/avatars/member2.svg",
+            "bio": "Experimental poet merging Eastern philosophical traditions with contemporary verse forms. Advocates for interdisciplinary approaches to poetry, incorporating elements of visual arts and digital media.",
+            "specialization": [
+                "Experimental Poetry",
+                "Digital Poetics",
+                "Workshop Facilitation"
+            ],
+            "email": "marcus.chen@uni.edu",
+            "achievements": [
+                "Winner, University Poetry Slam 2023",
+                "Founded 'Digital Verses' Workshop Series",
+                "Published in 'Contemporary Poetry Quarterly'"
+            ],
+            "favoriteQuote": {
+                "text": "Poetry is not a turning loose of emotion, but an escape from emotion.",
+                "author": "T.S. Eliot"
+            }
+        }
+    ],
+    "events": [
+        {
+            "id": "EVT001",
+            "title": "Modernist Poetry Workshop: Breaking Traditional Forms",
+            "date": "2024-03-15",
+            "type": "upcoming",
+            "description": "Immerse yourself in the art of experimental verse. Under the guidance of award-winning poet Dr. Sarah Mitchell, explore how to transcend conventional poetic structures while maintaining artistic integrity.",
+            "details": {
+                "topics": [
+                    "Deconstructing Meter and Rhythm",
+                    "Contemporary Free Verse Techniques",
+                    "Voice and Authenticity in Modern Poetry"
+                ],
+                "learningOutcomes": [
+                    "Master the principles of modern poetic forms",
+                    "Develop your unique poetic voice",
+                    "Create a portfolio of experimental works"
+                ],
+                "status": "Registration Open",
+                "callToAction": "Hone your verse-crafting prowess in this transformative workshop"
+            }
+        }
+    ],
+    "publications": [
+        {
+            "id": "PUB001",
+            "title": "Prismatic Verses: Spring 2024",
+            "subtitle": "A Collection of Contemporary Poetry",
+            "cover": "images/magazines/spring2024.jpg",
+            "description": "Our latest anthology showcases emerging voices exploring themes of identity, nature, and technological transformation through various poetic forms.",
+            "highlights": [
+                "Featured Poet: Dr. Maya Ramirez",
+                "Student Spotlight Section",
+                "Critical Analysis Corner"
+            ],
+            "file": "publications/spring2024.pdf",
+            "size": "2.4 MB"
+        }
+    ],
+    "microcopy": {
+        "errors": {
+            "404": "Page Not Found - Like Gatsby's green light, this page remains elusive",
+            "500": "Server Error - Even Kafka's Metamorphosis made more sense",
+            "offline": "Connection Lost - Like Crusoe, we're temporarily isolated"
+        },
+        "loading": {
+            "initial": "Turning the pages...",
+            "content": "Brewing a pot of literary inspiration...",
+            "submission": "Sending your words into the literary ether..."
+        },
+        "success": {
+            "registration": "Welcome to our literary circle!",
+            "submission": "Your words have found their home",
+            "publication": "Another chapter in our collective story"
+        }
+    },
+    "systemMessages": {
+        "maintenance": {
+            "title": "Taking a Brief Intermission",
+            "message": "Like Proust's narrator, we're briefly lost in remembrance. Please return shortly."
+        },
+        "welcome": {
+            "newMember": "Welcome to our literary sanctuary",
+            "returningMember": "Welcome back to our ongoing narrative"
+        }
+    }
+} 

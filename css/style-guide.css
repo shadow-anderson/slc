@@ -1,0 +1,34 @@
+/* Style Guide - Literary Club Website
+ * Version 1.0
+ * Last Updated: 2024
+ */
+
+:root {
+    /* Primary Colors */
+    --primary-dark: #800020;    /* Burgundy */
+    --primary-light: #F8F4E3;   /* Parchment */
+    --accent: #D4AF37;          /* Gold */
+    
+    /* Secondary Colors */
+    --text-dark: #2C1810;
+    --text-light: #F8F4E3;
+    --shadow: rgba(44, 24, 16, 0.1);
+    
+    /* Typography */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Lato', sans-serif;
+    --quote-font: Georgia, serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    
+    /* Breakpoints */
+    --mobile: 576px;
+    --tablet: 768px;
+    --desktop: 992px;
+    --wide: 1200px;
+} 

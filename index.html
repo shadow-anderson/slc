@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University Student Literary Club - Fostering creativity and literary excellence">
+    
+    <title>Student Literary Club</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="fonts/playfair-display-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato-v23-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Fonts with display swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/university-logo.png" alt="University Logo" class="university-logo">
+                <img src="images/slc-emblem.png" alt="SLC Emblem" class="slc-emblem">
+            </div>
+            <div class="established-text">
+                <span>Established 1995</span>
+            </div>
+        </div>
+        <nav class="sticky-nav">
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Crafting Stories, Creating Futures</h1>
+            <div class="quote-carousel">
+                <p class="quote">Click to discover our literary passions</p>
+                <div class="quotes-container">
+                    <p>"Literature is the most agreeable way of ignoring life." - Fernando Pessoa</p>
+                    <p>"A reader lives a thousand lives before he dies." - George R.R. Martin</p>
+                    <p>"Words can change worlds." - Student Literary Club</p>
+                </div>
+            </div>
+            <button class="cta-button">Meet Our Wordsmiths</button>
+        </div>
+    </section>
+
+    <!-- Member Showcase Section -->
+    <section class="members-section section" id="members">
+        <div class="members-container">
+            <h2 class="section-title">Our Literary Circle</h2>
+            <div class="members-grid">
+                <!-- Member Card 1 -->
+                <div class="member-card" data-member-id="SLC001">
+                    <div class="member-photo">
+                        <img src="https://api.dicebear.com/7.x/personas/svg?seed=member1" alt="Priya Mehta">
+                        <div class="member-overlay">
+                            <h3>Priya Mehta</h3>
+                            <p class="designation">President</p>
+                            <span class="department-badge literature">English Literature</span>
+                            <p class="batch">2023-2027</p>
+                        </div>
+                    </div>
+                    <div class="member-details">
+                        <div class="bio">
+                            <p>Postmodern fiction enthusiast with a focus on South Asian literature. Leading the club's initiatives in promoting diverse literary voices.</p>
+                        </div>
+                        <div class="specialization">
+                            <h4>Literary Specialization</h4>
+                            <div class="genre-tags">
+                                <span>Poetry Analysis</span>
+                                <span>Editorial Review</span>
+                                <span>Public Speaking</span>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <a href="mailto:priya.mehta@uni.edu">priya.mehta@uni.edu</a>
+                        </div>
+                        <div class="achievements">
+                            <h4>Highlights</h4>
+                            <ul>
+                                <li>Best Creative Writing Award 2023</li>
+                                <li>Published in University Literary Journal</li>
+                                <li>TEDx Speaker: "The Power of Words"</li>
+                            </ul>
+                        </div>
+                        <div class="favorite-quote">
+                            <h4>Favorite Quote</h4>
+                            <blockquote>
+                                "Stories are light. Light is precious in a world so dark."
+                                <cite>- The Tale of Despereaux</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member Card 2 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="https://api.dicebear.com/7.x/personas/svg?seed=member2" alt="John Smith">
+                        <div class="member-overlay">
+                            <h3>John Smith</h3>
+                            <p class="designation">Prose Editor</p>
+                            <span class="department-badge creative">Creative Writing</span>
+                            <p class="batch">2023-2027</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member Card 3 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="https://api.dicebear.com/7.x/personas/svg?seed=member3" alt="Emma Wilson">
+                        <div class="member-overlay">
+                            <h3>Emma Wilson</h3>
+                            <p class="designation">Events Coordinator</p>
+                            <span class="department-badge journalism">Journalism</span>
+                            <p class="batch">2021-2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Timeline Section -->
+    <section class="events-section section" id="events">
+        <div class="timeline-container">
+            <h2 class="section-title">Literary Journey</h2>
+            <div class="timeline">
+                <!-- Upcoming Event -->
+                <div class="timeline-item upcoming">
+                    <div class="timeline-date">
+                        <span class="date">15</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Poetry Workshop: Finding Your Voice</h3>
+                        <p class="description">An intensive workshop on contemporary poetry techniques with award-winning poet Sarah Mitchell.</p>
+                        <div class="event-details collapsed">
+                            <p>Join us for an immersive experience in the world of modern poetry. Learn about:</p>
+                            <ul>
+                                <li>Free verse techniques</li>
+                                <li>Metaphor mastery</li>
+                                <li>Performance poetry</li>
+                            </ul>
+                            <button class="register-btn">Register Now</button>
+                        </div>
+                        <div class="event-footer">
+                            <span class="status-badge open">Registration Open</span>
+                            <button class="details-toggle">More Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Annual Fest Countdown -->
+                <div class="timeline-item festival">
+                    <div class="countdown-container">
+                        <h3>Literary Fest 2024</h3>
+                        <div class="countdown">
+                            <div class="countdown-item">
+                                <span class="count days">45</span>
+                                <span class="label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="count hours">12</span>
+                                <span class="label">Hours</span>
+                            </div>
+                        </div>
+                        <p>Mark your calendars for the biggest literary celebration!</p>
+                    </div>
+                </div>
+
+                <!-- Past Event -->
+                <div class="timeline-item past">
+                    <div class="timeline-date">
+                        <span class="date">28</span>
+                        <span class="month">FEB</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Short Story Marathon</h3>
+                        <p class="description">A 12-hour creative writing challenge where participants crafted compelling short stories.</p>
+                        <div class="event-details collapsed">
+                            <p>Event Highlights:</p>
+                            <ul>
+                                <li>15 stories published</li>
+                                <li>3 winners selected</li>
+                                <li>Guest judge: Prof. James Wright</li>
+                            </ul>
+                            <button class="revisit-btn">View Stories</button>
+                        </div>
+                        <div class="event-footer">
+                            <span class="status-badge completed">Completed</span>
+                            <button class="details-toggle">More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section section" id="resources">
+        <div class="resources-container">
+            <h2 class="section-title">Literary Resources</h2>
+            <div class="resources-grid">
+                <!-- Publications Column -->
+                <div class="resource-column publications">
+                    <h3>Club Publications</h3>
+                    <div class="magazine-grid">
+                        <div class="magazine-cover">
+                            <img src="https://picsum.photos/400/500?random=1" alt="Spring 2024 Edition">
+                            <div class="magazine-overlay">
+                                <h4>Spring 2024</h4>
+                                <p>Poetry Special</p>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Download PDF</span>
+                                    <small>2.4 MB</small>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="magazine-cover">
+                            <img src="https://picsum.photos/400/500?random=2" alt="Winter 2023 Edition">
+                            <div class="magazine-overlay">
+                                <h4>Winter 2023</h4>
+                                <p>Prose Collection</p>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Download PDF</span>
+                                    <small>1.8 MB</small>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add more magazine covers as needed -->
+                    </div>
+                </div>
+
+                <!-- Writing Tools Column -->
+                <div class="resource-column writing-tools">
+                    <h3>Writing Tools</h3>
+                    <div class="markdown-editor">
+                        <h4>Quick Draft</h4>
+                        <div class="editor-container">
+                            <textarea id="markdown-input" placeholder="Write your story here..."></textarea>
+                            <div id="markdown-preview" class="preview">
+                                <p class="preview-placeholder">Preview will appear here...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="name-generator" class="tool-button">
+                        Generate Character Name
+                        <span class="generated-name"></span>
+                    </button>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="resource-column quick-links">
+                    <h3>Quick Links</h3>
+                    <div class="links-container">
+                        <div class="link-category">
+                            <h4>Writing Guidelines</h4>
+                            <ul>
+                                <li><a href="#">University Style Guide</a></li>
+                                <li><a href="#">Submission Format</a></li>
+                                <li><a href="#">Citation Rules</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-category">
+                            <h4>Competition Deadlines</h4>
+                            <ul class="deadline-list">
+                                <li>
+                                    <span class="deadline-date">Mar 20</span>
+                                    <span class="deadline-event">Poetry Contest</span>
+                                </li>
+                                <li>
+                                    <span class="deadline-date">Apr 05</span>
+                                    <span class="deadline-event">Flash Fiction</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="link-category">
+                            <h4>Meeting Schedule</h4>
+                            <ul class="schedule-list">
+                                <li>
+                                    <span class="schedule-day">Tuesday</span>
+                                    <span class="schedule-time">4:00 PM</span>
+                                </li>
+                                <li>
+                                    <span class="schedule-day">Friday</span>
+                                    <span class="schedule-time">5:30 PM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Scroll back to top">
+        <span class="arrow">↑</span>
+        <span class="text">Return to Start</span>
+    </button>
+
+    <!-- Add social media icons -->
+    <div class="social-links">
+        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Join our Discord"><i class="fab fa-discord"></i></a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,376 @@
+/* Root Variables for Consistent Design */
+:root {
+    /* Color Palette */
+    --primary-color: #2C3E50;      /* Dark Blue */
+    --secondary-color: #ECF0F1;    /* Light Gray */
+    --accent-color: #E74C3C;       /* Coral Red */
+    --text-primary: #2C3E50;       /* Dark Blue */
+    --text-secondary: #7F8C8D;     /* Medium Gray */
+    --success-color: #27AE60;      /* Green */
+    --warning-color: #F39C12;      /* Orange */
+    --white: #FFFFFF;
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+    
+    /* Spacing */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--secondary-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Container Styles for Consistent Alignment */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header Styling */
+.main-header {
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    padding: 1rem 2rem;
+}
+
+.logo-container img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Navigation */
+.nav-container {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.nav-container ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-container a {
+    font-weight: 500;
+    position: relative;
+    color: var(--secondary-color);
+    padding: var(--spacing-small) var(--spacing-medium);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-container a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-container a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    background-image: 
+        linear-gradient(rgba(93, 55, 84, 0.7), rgba(93, 55, 84, 0.7)), 
+        url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 6rem 0;
+}
+
+/* Member Cards */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+}
+
+.member-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    padding-bottom: 1rem;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.member-photo {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 1.5rem;
+    color: var(--white);
+}
+
+.department-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.department-badge.literature {
+    background-color: var(--accent-color);
+}
+
+.department-badge.creative {
+    background-color: var(--success-color);
+}
+
+.department-badge.journalism {
+    background-color: var(--warning-color);
+}
+
+/* Member Details */
+.member-details {
+    padding: 1.5rem;
+}
+
+.bio {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.genre-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.genre-tags span {
+    background-color: var(--secondary-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.875rem;
+}
+
+/* Icon Sizing */
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.download-btn i {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Resources Section */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.resource-column {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.magazine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.magazine-cover {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+}
+
+.magazine-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.magazine-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 1.5rem;
+    color: var(--white);
+}
+
+/* Timeline Improvements */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--primary-color);
+    opacity: 0.2;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+/* Social Links Enhancement */
+.social-links {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    background-color: var(--accent-color);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .member-photo {
+        height: 250px;
+    }
+
+    .timeline {
+        padding-left: 1rem;
+    }
+
+    .social-links {
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    .members-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+h1 { 
+    font-size: 2.5rem; 
+    margin-bottom: var(--spacing-medium);
+}
+
+h2 { 
+    font-size: 2rem; 
+    margin-bottom: var(--spacing-medium);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.section-padding {
+    padding: var(--spacing-large) 0;
+} 
