@@ -1,9 +1,9 @@
 {
     "scripts": {
-        "build:css": "node_modules/.bin/postcss styles.css -o styles.min.css --verbose",
-        "build:js": "npx esbuild js/main.js --bundle --minify --outfile=main.min.js",
-        "build": "npm run build:css && npm run build:js"
-    },
+  "build:css": "node build-css.js",
+  "build:js": "npx esbuild js/main.js --bundle --minify --outfile=main.min.js",
+  "build": "npm run build:css && npm run build:js"
+},
     "dependencies": {
         "marked": "^4.0.0",
         "micromodal": "^0.4.6",
