@@ -2,50 +2,74 @@
     "members": [
         {
             "id": "SLC001",
-            "name": "Priya Mehta",
+            "name": "Gurbani Saroy",
             "role": "President",
             "department": "English Literature",
             "batch": "2023-2027",
             "photo": "images/avatars/member1.svg",
-            "bio": "Specializing in postcolonial literature with a focus on diasporic narratives. Currently exploring the intersection of magical realism and contemporary South Asian storytelling, while leading the club's initiatives in promoting diverse literary voices.",
+            "bio": "Postmodern fiction enthusiast with a focus on South Asian literature. Leading the club's initiatives in promoting diverse literary voices.",
             "specialization": [
-                "Postcolonial Theory",
-                "Narrative Techniques",
-                "Literary Criticism"
+                "Poetry Analysis",
+                "Editorial Review", 
+                "Public Speaking"
             ],
-            "email": "priya.mehta@uni.edu",
+            "email": "priya.mehta@mrsptu.ac.in",
             "achievements": [
-                "Published 'Voices from the Margin' in University Literary Review",
-                "Presented at Regional Literary Theory Conference 2023",
-                "Curated 'Emerging Voices' Poetry Anthology"
+                "Best Creative Writing Award 2023",
+                "Published in University Literary Journal",
+                "TEDx Speaker: 'The Power of Words'"
             ],
             "favoriteQuote": {
-                "text": "In our village, folks say God crumbles up the old moon into stars.",
-                "author": "Alexander Solzhenitsyn"
+                "text": "Stories are light. Light is precious in a world so dark.",
+                "author": "The Tale of Despereaux"
             }
         },
         {
             "id": "SLC002",
-            "name": "Marcus Chen",
-            "role": "Poetry Editor",
+            "name": "Rahul Sharma",
+            "role": "Prose Editor",
             "department": "Creative Writing",
             "batch": "2022-2026",
             "photo": "images/avatars/member2.svg",
-            "bio": "Experimental poet merging Eastern philosophical traditions with contemporary verse forms. Advocates for interdisciplinary approaches to poetry, incorporating elements of visual arts and digital media.",
+            "bio": "Aspiring novelist with a passion for magical realism. Curates the club's short story collections and writing workshops.",
             "specialization": [
-                "Experimental Poetry",
-                "Digital Poetics",
-                "Workshop Facilitation"
+                "Short Story Writing",
+                "Novel Editing",
+                "Speculative Fiction"
             ],
-            "email": "marcus.chen@uni.edu",
+            "email": "rahul.sharma@mrsptu.ac.in",
             "achievements": [
-                "Winner, University Poetry Slam 2023",
-                "Founded 'Digital Verses' Workshop Series",
-                "Published in 'Contemporary Poetry Quarterly'"
+                "Winner, University Short Story Contest 2023",
+                "Editor, 'Unbound Imaginations' Anthology",
+                "Mentor, Young Writers Club"
             ],
             "favoriteQuote": {
-                "text": "Poetry is not a turning loose of emotion, but an escape from emotion.",
-                "author": "T.S. Eliot"
+                "text": "And by the way, everything in life is writable about if you have the outgoing guts to do it, and the imagination to improvise.",
+                "author": "Sylvia Plath"
+            }
+        },
+        {
+            "id": "SLC003",
+            "name": "Simran Kaur",
+            "role": "Events Coordinator",
+            "department": "Journalism",
+            "batch": "2021-2025",
+            "photo": "images/avatars/member3.svg",
+            "bio": "Budding journalist with a knack for creative nonfiction. Brings a reporter's eye to the club's events and publications.",
+            "specialization": [
+                "Event Management",
+                "Creative Nonfiction",
+                "Investigative Reporting"
+            ],
+            "email": "simran.kaur@mrsptu.ac.in",
+            "achievements": [
+                "Organizer, LitFest 2023",
+                "Winner, Campus Reporter Award",
+                "Contributor, University Magazine"
+            ],
+            "favoriteQuote": {
+                "text": "I can shake off everything as I write; my sorrows disappear, my courage is reborn.",
+                "author": "Anne Frank"
             }
         }
     ],

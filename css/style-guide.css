@@ -5,14 +5,19 @@
 
 :root {
     /* Primary Colors */
-    --primary-dark: #800020;    /* Burgundy */
-    --primary-light: #F8F4E3;   /* Parchment */
-    --accent: #D4AF37;          /* Gold */
+    --primary-dark: #1F2937;    /* Dark slate for depth */
+    --primary-red: #9B2C2C;     /* Deep red - brand color */
+    --accent-gold: #D4AF37;     /* Rich gold for accents */
     
     /* Secondary Colors */
-    --text-dark: #2C1810;
-    --text-light: #F8F4E3;
-    --shadow: rgba(44, 24, 16, 0.1);
+    --bg-cream: #FFFAF3;        /* Warm background */
+    --text-dark: #374151;       /* Main text color */
+    --text-light: #F3F4F6;      /* Light text */
+    
+    /* Accent Colors */
+    --accent-teal: #2C7A7B;     /* Teal for variety */
+    --accent-rust: #C05621;     /* Rust orange for warmth */
+    --accent-sage: #4A5568;     /* Sage for subtle elements */
     
     /* Typography */
     --heading-font: 'Playfair Display', serif;
@@ -31,4 +36,70 @@
     --tablet: 768px;
     --desktop: 992px;
     --wide: 1200px;
+} 
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Section spacing */
+.section {
+  padding: 4rem 0;
+}
+
+/* Typography improvements */
+.text-large {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 } 

@@ -1,7 +1,7 @@
 // Import required libraries
-import { Swiper } from 'swiper';
-import MicroModal from 'micromodal';
-import { marked } from 'marked';
+import { Swiper } from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+import MicroModal from 'https://cdn.skypack.dev/micromodal@0.4.10';
+import { marked } from 'https://cdn.skypack.dev/marked@12.0.0';
 
 // Initialize modules
 document.addEventListener('DOMContentLoaded', async function() {
@@ -26,6 +26,53 @@ document.addEventListener('DOMContentLoaded', async function() {
         
         // Add accessibility features
         addAccessibilityFeatures();
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            // Meet Our Wordsmiths button
+            const ctaButton = document.querySelector('.cta-button');
+            ctaButton.addEventListener('click', () => {
+                const membersSection = document.getElementById('members');
+                membersSection.scrollIntoView({ behavior: 'smooth' });
+            });
+
+            // Register Now button
+            const registerButton = document.querySelector('.register-btn');
+            registerButton.addEventListener('click', () => {
+                alert('Registration form will open here');
+            });
+
+            // View Stories button 
+            const viewStoriesButton = document.querySelector('.revisit-btn');
+            viewStoriesButton.addEventListener('click', () => {
+                alert('Stories from the event will be displayed here');
+            });
+
+            // Download PDF buttons
+            const downloadButtons = document.querySelectorAll('.download-btn');
+            downloadButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('PDF will be downloaded');
+                });
+            });
+
+            const memberCards = document.querySelectorAll('.member-card');
+            
+            memberCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Toggle expanded class
+                    this.classList.toggle('expanded');
+                    
+                    // Smooth scroll to card if it's expanded
+                    if (this.classList.contains('expanded')) {
+                        this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Member card expansion
+            initializeMemberCards();
+        });
     } catch (error) {
         handleError(error);
     }
@@ -216,6 +263,40 @@ function addAccessibilityFeatures() {
             if (expandedCard) {
                 expandedCard.classList.remove('expanded');
             }
+        }
+    });
+}
+
+// Member card expansion functionality
+function initializeMemberCards() {
+    const memberCards = document.querySelectorAll('.member-card');
+    
+    memberCards.forEach(card => {
+        const expandButton = card.querySelector('.expand-button');
+        const details = card.querySelector('.member-details');
+        
+        if (expandButton && details) {
+            expandButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Toggle expanded state
+                const isExpanded = card.classList.toggle('expanded');
+                
+                // Update button text and icon
+                expandButton.innerHTML = isExpanded ? 
+                    '<i class="fas fa-chevron-up"></i> Show Less' : 
+                    '<i class="fas fa-chevron-down"></i> Read More';
+                
+                // Animate details height
+                if (isExpanded) {
+                    details.style.maxHeight = `${details.scrollHeight}px`;
+                    // Smooth scroll if needed
+                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else {
+                    details.style.maxHeight = '0px';
+                }
+            });
         }
     });
 } 
