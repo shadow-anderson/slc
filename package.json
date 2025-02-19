@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "build:css": "postcss css/styles.css -o css/styles.min.css",
-        "build:js": "esbuild js/main.js --bundle --minify --outfile=js/main.min.js",
+        "build:css": "postcss styles.css -o styles.min.css",
+        "build:js": "esbuild js/main.js --bundle --minify --outfile=main.min.js",
         "build": "npm run build:css && npm run build:js"
     },
     "dependencies": {
@@ -10,10 +10,10 @@
         "swiper": "^8.0.0"
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.0",
-        "cssnano": "^5.0.0",
-        "esbuild": "^0.14.0",
+        "autoprefixer": "^10.4.20",
+        "cssnano": "^5.1.15",
+        "esbuild": "^0.14.54",
         "postcss": "^8.4.0",
-        "postcss-cli": "^9.0.0"
+        "postcss-cli": "^9.1.0"
     }
-} 
+}
