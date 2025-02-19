@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build:css": "npx postcss styles.css -o styles.min.css",
+        "build:css": "node_modules/.bin/postcss styles.css -o styles.min.css --verbose",
         "build:js": "npx esbuild js/main.js --bundle --minify --outfile=main.min.js",
         "build": "npm run build:css && npm run build:js"
     },
