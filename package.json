@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "build:css": "postcss styles.css -o styles.min.css",
-        "build:js": "esbuild js/main.js --bundle --minify --outfile=main.min.js",
+        "build:css": "npx postcss styles.css -o styles.min.css",
+        "build:js": "npx esbuild js/main.js --bundle --minify --outfile=main.min.js",
         "build": "npm run build:css && npm run build:js"
     },
     "dependencies": {
