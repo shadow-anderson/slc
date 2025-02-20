@@ -1,9 +1,9 @@
 {
     "scripts": {
   "build:css": "node build-css.js",
-  "build:js": "node_modules/.bin/esbuild js/main.js --bundle --minify --outfile=main.min.js",
-  "build": "npm run build:css && npm run build:js",
-  "postinstall": "chmod +x node_modules/.bin/esbuild"
+  "build:js": "node_modules/.bin/esbuild js/main.js --bundle --minify --outfile=public/main.min.js",
+  "build": "npm run build:css && npm run build:js && cp index.html public/ && cp -r fonts public/",
+  "postinstall": "chmod +x node_modules/.bin/esbuild && mkdir -p public"
 },
     "dependencies": {
         "marked": "^4.0.0",
